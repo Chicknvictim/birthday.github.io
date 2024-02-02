@@ -111,7 +111,41 @@ img
     height: auto;
     cursor: pointer;
 }
+h1 > .magic-text {
+    animation: background-pan 3s linear infinite;
+    background: linear-gradient(
+      to right,
+      white,
+      grey,
+      black,
+      white
+    );
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+  }
+  h2{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    text-align: center;
+  }
+  h2 > .magic-text1{
 
+    animation: background-pan 3s linear infinite;
+    background: linear-gradient(to right,
+    white,
+    #898989,
+    #BDBEBE,
+    #F2F3F3,
+    white 
+    ) ;
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+  }
 @media only screen and (max-width: 600px) {
     .header_text{
         color: black;
