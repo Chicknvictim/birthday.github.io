@@ -1,7 +1,22 @@
-body {
+:root {  
+    --purple: rgb(123, 31, 162);
+    --violet: rgb(103, 58, 183);
+    --pink: rgb(244, 143, 177);
+  }
+  
+  @keyframes background-pan {
+    from {
+      background-position: 0% center;
+    }
+    
+    to {
+      background-position: -200% center;
+    }
+  }body {
     
     height: 90vh;
     background: linear-gradient(to right, #4568dc , #b06ab3);
+    color: white;
 }
 
 #ans {
@@ -33,10 +48,10 @@ body {
 }
 
 .header_text {
-    font-family: 'Nunito';
+    font-family: 'poppins';
     font-size: 35;
-    font-weight: bold;
-    color: black;
+    font-weight: 420;
+    color: rgb(255, 255, 255);
     text-align: center;
     margin-top: 20px;
     margin-bottom: 0px;
@@ -101,8 +116,24 @@ body {
     transform: scale(1.01);
     filter: saturate();
     
+}  
+h1 > .magic-text {
+    font-weight: 500;
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    rgb(0, 0, 0),
+    rgb(32, 52, 201),
+    rgb(136, 54, 180),
+    rgb(0, 0, 0)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}h1{
+    text-align: center;
 }
-
 
 
 img
